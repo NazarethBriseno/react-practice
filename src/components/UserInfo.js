@@ -15,7 +15,8 @@ function ShowUserInfo(props){
             <h2>{props.age}</h2>
             <h2>{props.email}</h2>
             <button onClick={openModal}>Delete User</button>
-            {modalForDeleteUser && <Modal/>}
+            {modalForDeleteUser && <Modal onCancel={closeModal} />}
+            {/*When you use a component, you can't just place an onClick event on it and expect it to work, you need to create a "prop" and use the onClick function INSIDE the component and call its prop attribute!*/}
             {modalForDeleteUser && <BackDrop onCancel={closeModal}/>}
         </div>
        
