@@ -1,24 +1,16 @@
-import logo from './logo.svg';
+import ShowUserInfo from './components/UserInfo';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <div>
+    <h1>Users</h1>
+    <hr/>
+    <ShowUserInfo name='Nazareth' age={23} email='nazarethbriseno@gmail.com'/>
+    <ShowUserInfo name='Jose' age={23} email='rabago@gmail.com'/>
+    <ShowUserInfo name='Laz' age={22} email='lazlantern767@gmail.com'/>
+    <ShowUserInfo name='Marc' age={22} email='marcymarcyandthefunkybunch@gmail.com'/>
+   </div>
   );
 }
 
